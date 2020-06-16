@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.profile-image{
+    width: 100px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.wrapper #navbar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #e65c00;
+    padding: 15px 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.wrapper #navbar ul {
+    list-style: none;
+}
+
+.wrapper #navbar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wrapper #navbar ul li:hover{
+    background: #cc5200;
+    border-left: 4px solid #963000;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-icon {
+    padding-right: 5px;
+}
+
+#main-doc {
+    width: 100%;
+    margin-left: 300px;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.primary-heading{
+    font-size: 45px;
+    color: black;
+    padding: 30px;
+    text-align: center;
+}
+
+.secondary-heading{
+    font-size: 30px;
+    color: black;
+    padding: 18px;
+}
+
+.tertiary-heading{
+    font-size: 20px;
+    color: black;
+    padding: 20px;
+}
+
+.paragraph{
+    font-size: 18px;
+    padding: 18px;
+    line-height: 1.5;
+}
+
+#main-doc ul{
+    font-size: 20px;
+    padding-left: 75px;
+}
+
+#main-doc ul li{
+    padding: 5px;
+}
+
+.projects-guidelines{
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-screen{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 2%;
+}
+
+.shadow-card{
+    background-color: transparent;
+    width: 22vw;
+    height: 12vw;
+    perspective: 2000px;
+}
+
+.shadow-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    text-align: center;
+    box-shadow: 0 4px outset #cc5200;
+    border: 4px outset #cc5200;
+}
+
+.shadow-card:hover .shadow-card-inner{
+    transform: rotateY(180deg);
+}
+
+.shadow-card-front, .shadow-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.shadow-card-front{
+    background-color: #000;
+    color: #fff;
+}
+
+.shadow-card-back{
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    transform: rotateY(180deg);
+    line-height: 2.2;
+}
+
+.shadow-card-text{
+    line-height: 1.5;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.image-project{
+    width: 21.4vw;
+    height: 11.4vw;
+}
+
+.button-project{
+    color: #fff;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    border: 2px solid #fff;
+    text-decoration: none;
+}
+
+.button-project:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2px, solid, #fff;
+}
+
+
+
+
+
+
+
