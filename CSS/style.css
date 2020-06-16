@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     background: #fff;
@@ -27,10 +32,36 @@ body {
     cursor: pointer;
 }
 
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.navbar-text{
+    text-align: center;
+    grid-column: 2/3;
+}
+
+.header-icon{
+    grid-column: 3/4;
+}
+
+.header-section{
+    text-align: center;
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 500;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 .profile-image{
-    width: 100px;
+    width: 13vw;
     height: 100%;
-    border-radius: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.548);
 }
 
 .wrapper #navbar{
@@ -40,9 +71,10 @@ body {
     background: #e65c00;
     padding: 15px 0;
     border-right: 1px solid rgba(0, 0, 0, 0.05);
+    z-index: 1;
 }
 
-.wrapper #navbar ul {
+.ul-navbar {
     list-style: none;
 }
 
@@ -224,12 +256,16 @@ body {
     padding: 15px;
 }
 
-@media only screen and (max-width: 600px){
-    
+@media only screen and (max-width: 1000px){
+
     .wrapper{
         flex-direction: column;
     }
     
+    .header-section{
+        display: none;
+    }
+
     .wrapper #navbar{
         position: relative;
         position: sticky;
@@ -238,7 +274,7 @@ body {
         background: #e65c00;
     }
     
-    .wrapper #navbar ul{
+    .ul-navbar{
         width: 100%;
         display: none;
     }
@@ -247,7 +283,10 @@ body {
         width: 100%;
         display: block;
         text-align: center;
-        margin-left: -3.5%;
+    }
+
+    #academic-history ul{
+        display: block;
     }
 
     .toggle{
@@ -264,8 +303,129 @@ body {
         overflow: hidden;
     }
 
+    #introduction{
+        padding-top: 11.5vh;
+        margin-top: -11.5vh;
+    }
+
+    #academic-history{
+        padding-top: 7.5vh;
+        margin-top: -7.5vh;
+    }
+
     #projects{
         width: 100%;
+        padding-top: 7.5vh;
+        margin-top: -7.5vh;
+    }
+
+    #hobbies{
+        padding-top: 7.5vh;
+        margin-top: -7.5vh;
+    }
+
+    #future-view{
+        padding-top: 7.5vh;
+        margin-top: -7.5vh;
+    }
+
+    .projects-screen{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 8px;
+        padding-left: 5%;
+    }
+
+    .shadow-card{
+        width: 45vw;
+        height: 25vw;
+    }
+
+    .shadow-card-back{
+        line-height: 1.2;
+    }
+
+    .image-project{
+        width: 44.2vw;
+        height: 24.2vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px){
+    
+    .wrapper{
+        flex-direction: column;
+    }
+    
+    .header-section{
+        display: none;
+    }
+
+    .wrapper #navbar{
+        position: relative;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background: #e65c00;
+    }
+    
+    .ul-navbar{
+        width: 100%;
+        display: none;
+    }
+
+    .wrapper #navbar ul li{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    #academic-history ul{
+        display: block;
+    }
+
+    .toggle{
+        display: block;
+        background: #e65c00;
+    }
+
+    .active{
+        display: block;
+    }
+
+    #main-doc{
+        margin: auto;
+        overflow: hidden;
+    }
+
+    
+    #introduction{
+        padding-top: 9.5vh;
+        margin-top: -9.5vh;
+    }
+
+    #academic-history{
+        padding-top: 9.5vh;
+        margin-top: -9.5vh;
+    }
+
+    #projects{
+        width: 100%;
+        padding-top: 9.5vh;
+        margin-top: -9.5vh;
+    }
+
+    #hobbies{
+        padding-top: 9.5vh;
+        margin-top: -9.5vh;
+    }
+
+    #future-view{
+        padding-top: 9.5vh;
+        margin-top: -9.5vh;
     }
 
     .projects-screen{
