@@ -37,6 +37,14 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
+
+.navbar-image{
+    grid-column: 1/2;
+    width: 40px;
+    height: 100%;
+    border: 1px solid #fff;
+}
+
 .navbar-text{
     text-align: center;
     grid-column: 2/3;
@@ -68,7 +76,7 @@ body {
     position: fixed;
     width: 250px;
     height: 100%;
-    background: #e65c00;
+    background: #8B60E8;
     padding: 15px 0;
     border-right: 1px solid rgba(0, 0, 0, 0.05);
     z-index: 1;
@@ -85,7 +93,7 @@ body {
 }
 
 .wrapper #navbar ul li:hover{
-    background: #cc5200;
+    background: #8B60E8;
     border-left: 4px solid #963000;
 }
 
@@ -97,6 +105,20 @@ body {
 .nav-icon {
     padding-right: 5px;
 }
+
+.link-profile{
+    text-decoration: none;
+    cursor: none;
+}
+
+.profile-icon{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer; 
+}
+
 
 #main-doc {
     width: 100%;
@@ -138,9 +160,6 @@ body {
     padding: 5px;
 }
 
-#projects{
-}
-
 .projects-guidelines{
     align-items: center;
     justify-content: center;
@@ -168,8 +187,8 @@ body {
     transition: 0.3s;
     transform-style: preserve-3d;
     text-align: center;
-    box-shadow: 0 4px solid #cc5200;
-    border: 4px solid #cc5200;
+    box-shadow: 0 4px solid #8B60E8;
+    border: 4px solid #8B60E8;
 }
 
 .shadow-card:hover .shadow-card-inner{
@@ -246,7 +265,7 @@ body {
 .hobbie-card{
     text-align: center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid #8B60E8;
     align-items: center;
 }
 
@@ -256,7 +275,7 @@ body {
     padding: 15px;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1100px){
 
     .wrapper{
         flex-direction: column;
@@ -271,7 +290,7 @@ body {
         position: sticky;
         top: 0;
         width: 100%;
-        background: #e65c00;
+        background: #8B60E8;
     }
     
     .ul-navbar{
@@ -291,7 +310,7 @@ body {
 
     .toggle{
         display: block;
-        background: #e65c00;
+        background: #8B60E8;
     }
 
     .active{
@@ -356,51 +375,6 @@ body {
 
 @media only screen and (max-width: 600px){
     
-    .wrapper{
-        flex-direction: column;
-    }
-    
-    .header-section{
-        display: none;
-    }
-
-    .wrapper #navbar{
-        position: relative;
-        position: sticky;
-        top: 0;
-        width: 100%;
-        background: #e65c00;
-    }
-    
-    .ul-navbar{
-        width: 100%;
-        display: none;
-    }
-
-    .wrapper #navbar ul li{
-        width: 100%;
-        display: block;
-        text-align: center;
-    }
-
-    #academic-history ul{
-        display: block;
-    }
-
-    .toggle{
-        display: block;
-        background: #e65c00;
-    }
-
-    .active{
-        display: block;
-    }
-
-    #main-doc{
-        margin: auto;
-        overflow: hidden;
-    }
-
     
     #introduction{
         padding-top: 9.5vh;
